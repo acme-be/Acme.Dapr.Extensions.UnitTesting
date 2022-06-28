@@ -7,11 +7,25 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageVersion>1.0.0.0</PackageVersion>
         <Copyright>ACME</Copyright>
+        <PackageIcon>logo.png</PackageIcon>
+        <RepositoryUrl>https://github.com/acme-be/dapr-extensions-unit-testing</RepositoryUrl>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <Authors>Simon Baudart</Authors>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="Dapr.Client" Version="1.7.0" />
       <PackageReference Include="Moq" Version="4.18.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="..\..\LICENSE" Pack="true" PackagePath="">
+            <Link>LICENSE</Link>
+        </Content>
+
+        <Content Include="..\..\logo.png" Pack="true" PackagePath="">
+            <Link>logo.png</Link>
+        </Content>
     </ItemGroup>
 
 </Project>
