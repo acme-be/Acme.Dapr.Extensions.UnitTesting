@@ -50,4 +50,4 @@ jobs:
         working-directory: ./src
 
       - name: Push
-        run: dotnet nuget push "**/*.nupkg" --api-key ${{ secrets.NUGET_TOKEN }} --skip-duplicate --no-symbols
+        run: dotnet nuget push "**/*.nupkg" --api-key ${{ secrets.NUGET_TOKEN }} --skip-duplicate --no-symbols --source https://api.nuget.org/v3/index.json
