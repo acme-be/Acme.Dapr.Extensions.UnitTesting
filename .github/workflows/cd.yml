@@ -20,7 +20,7 @@ jobs:
       - name: Set Project Version
         uses: vers-one/dotnet-project-version-updater@v1.0
         with:
-          file: ${{ inputs.projectFile }}
+          file: src/Acme.Dapr.Extensions.UnitTesting/Acme.Dapr.Extensions.UnitTesting.csproj
           version: ${{ env.MAJOR }}.${{ env.MINOR }}.${{ env.PATCH }}.${{ env.NUMBER_OF_COMMITS_SINCE_TAG }}
           
       - name: Setup .NET
